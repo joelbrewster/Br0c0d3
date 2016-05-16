@@ -1,0 +1,75 @@
+* {
+  /*border: 1px solid black;*/
+}
+
+href {
+}
+
+.Header{
+  text-align: right;
+  margin: 0 auto;
+}
+
+.Header li a{
+  display: inline-block;
+}
+
+.Input-Area{
+  box-sizing: border-box;
+  display: block;
+  font-size: 16px;
+  margin-top: 10px;
+  margin: 0 auto;
+  outline: none;
+  padding: 10px 2px;
+  width: 400px;
+  border: 1px solid rgba(0,0,0,);
+}
+
+.Input-Area:focus {
+  border: 1px solid #4D90FE;
+}
+
+.Google-Image{
+  width: 500px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 1%;
+  display: block;
+}
+
+.Button{
+  font-size: 14px;
+  font-weight: bold;
+  color: #757575;
+  padding: 11px 15px;
+  background: #F4F4F4;
+  border: #F4F4F4;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.Button:hover {
+  border: 1px solid #DFDFDF;
+  box-sizing: border-box;
+}
+
+.Button-Area{
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Footer {
+  background-color: grey;
+  position: absolute;
+  position: bottom;
+  width: 100%;
+}
+
+.Left {
+  text-align: left;
+}
+.Right {
+  text-align: right;
+}
