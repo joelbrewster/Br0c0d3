@@ -1,0 +1,43 @@
+* {
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#gameArea {
+    width: 75%;
+    height: 50%;
+    background: goldenrod;
+    position: absolute;
+    top: 25%;
+    left: 12.5%;
+}
+
+#target {
+    width: 25px;
+    height: 25px;
+    position: relative;
+}
+
+#score {
+    top: -50px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+#info {
+    right: -10px;
+    top: -50px;
+}
+
+#roundsRemaining {
+    left: 0px;
+    bottom: -50px;
+}
