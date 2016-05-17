@@ -8,7 +8,7 @@
 
 def print_choices
   # A user should be able to enter numbers to perform the operation on
-  puts "=============================================="
+  puts "========================"
   puts "Input number 1 please:"
   @number_one = gets.chomp.to_i
   puts "Input number 2 please:"
@@ -69,11 +69,6 @@ while true
   end
 end
 
-
-# Phase 1
-
-# Calculator functionality
-# Phase 2
 
 # Advanced Calculator functionality
 # Calculator should be able to do basic arithmetic (exponents, square roots)
