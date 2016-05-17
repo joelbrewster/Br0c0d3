@@ -62,17 +62,24 @@ puts users["Joel"] = [:twitter => "butthead"]
 # How would you return the array of Erik's favorite numbers?
 puts users["Erik"][:favorite_numbers]
 # How would you return the smallest of Erik's favorite numbers?
-puts users["Erik"][:favorite_numbers].sort
+puts users["Erik"][:favorite_numbers].sort!.first
+puts users["Erik"][:favorite_numbers].min
 # How would you return an array of Anil's favorite numbers that are also even?
 puts users["Erik"][:favorite_numbers].select { |i| i.even?}
 # How would you return an array of the favorite numbers common to all users?
-puts "==="
 
-all_numbers = Array.new
-users.each do |key, value|
-  all_numbers << value[:favorite_numbers]
+all_numbers_array = Array.new
+users.each do |name, hash|
+  all_numbers_array.push hash[:favorite_numbers]
 end
-puts users
+puts all_numbers_array[0] & all_numbers_array[1] & all_numbers_array[2]
+
+i = all_numbers_array.length
+while i > 0
+  all_numbers_array[i] & all_numbers_array[i - 1]
+  i = i.pred
+end
+
 
 # How would you return an array containing all users' favorite numbers, sorted, and excluding duplicates?
 
