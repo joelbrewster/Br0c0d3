@@ -1,0 +1,16 @@
+<% @reddit_data["data"]["children"].each do |post| %>
+  <p><%= post ["data"]["title"] %></p>
+  <em><%= post["data"]["author"] %></em>
+  <% if post["data"]["stickied"] %>
+    Sticky
+    <% end %>
+  <hr>
+  <em>Upboats - <%= post["data"]["ups"] %></em>
+  <% if post["data"]["preview"] and post["data"]["preview"]["images"] %>
+    <img src="<%= post["data"]["preview"]["images"][0]["resolutions"][0]["url"] %>">
+  <% end %>
+  <%# <%= post["data"] %1> %>
+  <hr>
+<% end %>
+<a href="/<%= params[:subreddit] %>?first=<%= @reddit_data["data"]["children"].first["data"]["name"] %>">Previous</a>
+<a href="/<%= params[:subreddit] %>?after=<%= @reddit_data["data"]["children"].last["data"]["name"] %>">Next</a>
