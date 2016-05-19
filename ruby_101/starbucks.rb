@@ -7,7 +7,7 @@ class Coffee
     @size = size
     @name = name
   end
-# Write the .to_s method for this class so when you puts c1 you will have "Darryl's latte, medium, 2 sugars."
+  # Write the .to_s method for this class so when you puts c1 you will have "Darryl's latte, medium, 2 sugars."
   def to_s
     return "#{@name}'s #{@type}, #{@size}, #{@sugar} sugars."
   end
