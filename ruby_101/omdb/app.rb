@@ -10,7 +10,7 @@ api_url = "http://www.omdbapi.com/?"
 # response = HTTParty.get "#{api_url}t=Alien&plot=full&tomatoes=true"
 # pp response
 
-# # Home route
+# Home route
 get '/' do
   erb :index
 end
@@ -19,6 +19,11 @@ post '/search' do
   params[:searchterm]
   @result = HTTParty.get "#{api_url}s=#{params[:searchterm]}"
   erb :search
+end
+
+get '/movie/:movieID' do
+  @res = HTTParty.get "#{api_url}i=#{params[:movieID]}&plot=full"
+  erb :movie
 end
 
 # # About route
