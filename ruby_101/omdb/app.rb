@@ -33,6 +33,6 @@ end
 
 # views/layout.erb
 # looks for yield
-  # [views/index.erb]
-  # [views/about.erb]
+# [views/index.erb]
+# [views/about.erb]
 

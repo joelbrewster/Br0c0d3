@@ -1,7 +1,8 @@
 <h1>Search results</h1>
 <div class="center">
   <% @result["Search"].each do |result| %>
-    <a href="/movie/<%= result["imdbID"] %>"><%= result["Title"]%> (<%= result["Year"]%>)</a>
     <img src="<%= result["Poster"] %>"></img>
+    <br>
+    <a href="/movie/<%= result["imdbID"] %>"><%= result["Title"]%> (<%= result["Year"]%>)</a>
 </div>
 <% end %>
